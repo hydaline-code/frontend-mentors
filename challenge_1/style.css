@@ -9,6 +9,12 @@
   font-weight: 18px;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -31,6 +37,45 @@ header nav ul {
 
 header .cta-button {
   display: none;
+}
+
+main {
+  border: 1px solid red;
+}
+
+main .hero {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+main .hero .mobile-image {
+  background-image: url("./images/bg-intro-mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+}
+
+main .hero .mobile-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.3rem;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 20px;
+  background-clip: var(--cyan-400);
+}
+
+.hero-headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -60,5 +105,37 @@ header .cta-button {
 
   header .ham-icon {
     display: none;
+  }
+
+  main .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: #ff9800 solid 2px;
+    overflow-x: hidden;
+  }
+
+  main .hero .desktop-image {
+    background-image: url("./images/bg-intro-desktop.svg");
+    background-size: cover;
+    width: 50%;
+    height: auto;
+    position: relative;
+    left: 15%;
+    
+  }
+
+  main .hero .desktop-image img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    left: 17%;
+  }
+
+  .hero-headline {
+    border:#ff9800 solid 2px;
+    align-items: flex-start;
+    max-width: 40%;
+    margin-left: 12%;
   }
 }
