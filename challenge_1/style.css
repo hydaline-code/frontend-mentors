@@ -1,0 +1,29 @@
+/* Color Palette */
+:root {
+  --primary-color: hsl(136, 64%, 51%); /* Green */
+  --cyan-400: hsl(192, 69%, 51%);
+  --secondary-color: #ff9800; /* Orange */
+  --background-color: #f5f5f5; /* Light Grey */
+  --text-color: #333333; /* Dark Grey */
+  font-family: Public Sans, sans-serif;
+  font-weight: 18px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: none;
+}
+
+header .cta-button {
+  display: none;
+}
+
