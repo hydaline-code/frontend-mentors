@@ -44,7 +44,6 @@ header {
 
 header nav ul {
   list-style: none;
-  padding: 0;
   display: none;
   position: fixed;
   top: 70px;
@@ -92,6 +91,15 @@ main .hero {
   background-color: var(--gray-50);
 }
 
+.hero-headline {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
 main .hero .hero-headline {
   font-family: var(--font-family);
   color: var(--blue-950);
@@ -130,18 +138,15 @@ main .hero .mobile-image img {
   background-clip: var(--cyan-400);
 }
 
-.hero-headline {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  align-items: center;
-  padding: 2rem;
-  text-align: center;
-}
-
 main .why-us .heading {
   text-align: center;
   font-family: var(--font-family);
+}
+
+main .latest-article h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--blue-950);
 }
 
 main .why-us .heading h2 {
@@ -165,7 +170,6 @@ main .why-us {
 }
 
 main .why-us .card {
-  background-color: rgba(255, 255, 255, 0.945);
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -185,6 +189,10 @@ main .why-us .card .one-card h3 {
   color: var(--blue-950);
   font-size: 2.5rem;
   font-weight: 300;
+}
+
+footer .footer-container .copyright p {
+  color: var(--text-color);
 }
 
 main .why-us .card .one-card p {
@@ -216,12 +224,6 @@ main .latest-cards .latest-card img {
   height: 100%;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
-}
-
-main .latest-article h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: var(--blue-950);
 }
 
 main .latest-cards .latest-card-text {
@@ -293,10 +295,6 @@ footer .footer-container .footer-links ul li a {
   color: var(--text-color);
 }
 
-footer .footer-container .copyright p {
-  color: var(--text-color);
-}
-
 @media screen and (min-width: 769px) {
   header {
     justify-content: space-around;
@@ -353,6 +351,9 @@ footer .footer-container .copyright p {
   .hero-headline {
     padding: 0;
     text-align: left;
+    align-items: flex-start;
+    max-width: 40%;
+    margin-left: 12%;
   }
 
   main .hero .desktop-image {
@@ -369,12 +370,6 @@ footer .footer-container .copyright p {
     height: auto;
     position: relative;
     left: 13%;
-  }
-
-  .hero-headline {
-    align-items: flex-start;
-    max-width: 40%;
-    margin-left: 12%;
   }
 
   main .hero .hero-headline p {
@@ -403,18 +398,6 @@ footer .footer-container .copyright p {
     max-width: 90%;
   }
 
-  main .why-us .card .one-card p {
-    line-height: 2rem;
-  }
-
-  main .why-us .heading {
-    align-items: flex-start;
-  }
-
-  main .why-us .heading h2 {
-    text-align: start;
-  }
-
   main .why-us .heading p {
     text-align: start;
     max-width: 60%;
@@ -422,13 +405,12 @@ footer .footer-container .copyright p {
   }
 
   main .why-us .card .one-card p {
+    line-height: 2rem;
     text-align: start;
   }
 
-  main .latest-cards {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
+  main .why-us .heading {
+    align-items: flex-start;
   }
 
   main .latest-article {
@@ -439,6 +421,16 @@ footer .footer-container .copyright p {
   main .latest-article h2 {
     text-align: start;
     margin-left: 0.7rem;
+  }
+
+  main .why-us .heading h2 {
+    text-align: start;
+  }
+
+  main .latest-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
   }
 
   footer {
