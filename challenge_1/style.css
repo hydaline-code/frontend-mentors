@@ -295,6 +295,18 @@ footer .footer-container .footer-links ul li a {
   color: var(--text-color);
 }
 
+#close {
+  display: none;
+}
+
+.ham-open #hamburger {
+  display: none;
+}
+
+.ham-open #close {
+  display: inline;
+}
+
 @media screen and (min-width: 769px) {
   header {
     justify-content: space-around;

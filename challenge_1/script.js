@@ -1,16 +1,13 @@
-document.getElementById('ham-icon').onclick = function() {
-  const nav = document.querySelector('header nav ul');
-  const hamburger = document.getElementById('hamburger');
-  const close = document.getElementById('close');
-  const isOpen = nav.classList.contains('open');
+document.getElementById("ham-icon").onclick = function () {
+  const nav = document.querySelector("header nav ul");
+  const hamIcon = document.getElementById("ham-icon");
+  const isOpen = nav.classList.contains("open");
 
   if (isOpen) {
-    nav.classList.remove('open');
-    hamburger.style.display = '';
-    close.style.display = 'none';
+    nav.classList.remove("open");
+    hamIcon.classList.remove("ham-open");
   } else {
-    nav.classList.add('open');
-    hamburger.style.display = 'none';
-    close.style.display = '';
+    nav.classList.add("open");
+    hamIcon.classList.add("ham-open");
   }
 };
