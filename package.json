@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gh-pages -d . -b gh-pages",
-    "deploy-challenge": "gh-pages -d . -b gh-pages --dest ."
+    "deploy": "gh-pages -d . -b gh-pages"
   },
   "repository": {
     "type": "git",
@@ -18,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/hydaline-code/frontend-mentors/issues"
   },
-  "homepage": "https://hydaline-code.github.io/frontend-mentors",
+  "homepage": "https://github.com/hydaline-code/frontend-mentors#readme",
   "devDependencies": {
     "gh-pages": "^6.3.0",
     "hint": "^7.1.13",
