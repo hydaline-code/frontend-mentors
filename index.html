@@ -1,69 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Mentor Challenges</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-        .container {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            max-width: 600px;
-            width: 100%;
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 30px;
-            text-align: center;
-            font-size: 2em;
-        }
-        .challenges {
-            list-style: none;
-        }
-        .challenges li {
-            margin: 15px 0;
-        }
-        .challenges a {
-            display: block;
-            padding: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
-            font-size: 1.1em;
-            font-weight: 500;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .challenges a:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1> Frontend Mentor Challenges</h1>
-        <ul class="challenges">
-            <li><a href="challenge_1/">Challenge 1 - Easybank Landing Page</a></li>
-            <li><a href="challenge_2/">Challenge 2 - Blog Preview Card</a></li>
-            <li><a href="challenge_3/">Challenge 3 - QR Code Component</a></li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | QR code component</title>
+  </head>
+  <body>
+    <div class="qr-card">
+      <div class="qr-card-image">
+        <img
+          src="./images/image-qr-code.png"
+          alt="QR code"
+        />
+      </div>
+      <div class="qr-card__content">
+        <h2>
+          Improve your front-end <br />
+          skills by building projects
+        </h2>
+        <p>
+          Scan the QR code to visit Frontend <br />
+          Mentor and take your coding skills to <br />
+          the next level
+        </p>
+      </div>
     </div>
-</body>
+  </body>
 </html>
