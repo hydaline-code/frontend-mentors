@@ -1,0 +1,119 @@
+:root {
+  --primary-Teal-500: hsl(179, 62%, 43%);
+  --primary-Teal-400: hsl(179, 51%, 48%);
+  --primary-Green-400: hsl(71, 73%, 54%);
+
+  --neutral-Teal-100: hsl(204, 43%, 93%);
+  --neutral-Gray-200: hsl(218, 22%, 67%);
+
+  --font-family: "karla", sans-serif;
+  --font-size: 16px;
+  --font-weight: 400;
+  --font-weight-bold: 700;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  background-color: var(--neutral-Teal-100);
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 80%;  
+  background-color: white;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  border-radius: 0.5rem;
+  font-family: var(--font-family);  
+ 
+}
+
+.container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container .main {
+  background-color: white;
+  padding: 1.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  
+}
+
+.container .main  h2 {
+    color: var(--primary-Teal-500);
+}
+
+.container .main  h5 {
+    color: var(--primary-Green-400);
+    font-size: 1.2rem;
+}
+
+.container .main  p {
+    color: var(--neutral-Gray-200);
+    font-size: var(--font-size);
+    line-height: 2rem;
+}
+
+
+.container .subscription {
+  background-color: var(--primary-Teal-500);
+  padding: 1.5rem;
+  
+}
+.subscription p , h2{
+    color: white;
+}
+
+.subscription p b {
+    font-size: 2rem;
+}
+
+.subscription p span{
+    color: var(--neutral-Teal-100);
+    margin-left: 1rem;
+}
+
+.subscription .access {
+    font-size: 1.3rem;
+    color: var(--neutral-Teal-100);
+}
+
+.container .why-us {
+  background-color: var(--primary-Teal-400);
+  padding: 1.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.container .why-us ul h2 {
+    color: white;
+    font-size: 1.5rem;
+}
+.container .why-us ul li {
+  color: var(--neutral-Teal-100);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  margin-bottom: 0.5rem;
+}
+
+.subscription button {
+  background-color: var(--primary-Green-400);
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.33rem;
+  cursor: pointer;
+  width: 100%;
+  font-size: var(--font-size);
+  font-family: "Karla", sans-serif;
+  margin: 1.2rem auto;
+}
